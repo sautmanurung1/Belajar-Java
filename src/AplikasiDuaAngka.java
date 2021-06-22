@@ -49,6 +49,12 @@ public class AplikasiDuaAngka extends javax.swing.JFrame {
 
         jPanel1.setBorder(javax.swing.BorderFactory.createTitledBorder("Operasi Dua Angka"));
 
+        PertamaText.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyTyped(java.awt.event.KeyEvent evt) {
+                PertamaTextKeyTyped(evt);
+            }
+        });
+
         Hasil.setText("=");
 
         TambahButton.setText("Tambah");
@@ -217,6 +223,10 @@ public class AplikasiDuaAngka extends javax.swing.JFrame {
             System.exit(0);
         }
     }//GEN-LAST:event_KeluarButtonActionPerformed
+
+    private void PertamaTextKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_PertamaTextKeyTyped
+        // TODO add your handling code here:
+    }//GEN-LAST:event_PertamaTextKeyTyped
 
     /**
      * @param args the command line arguments
